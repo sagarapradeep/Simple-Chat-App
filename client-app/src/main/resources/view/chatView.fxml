@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="509.0" prefWidth="607.0" stylesheets="@../css/ChatViewStyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.client.controller.ChatViewController">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" layoutX="438.0" layoutY="29.0" prefHeight="408.0" prefWidth="137.0" spacing="10.0">
+         <children>
+            <Circle fx:id="crlProfilePic" fill="DODGERBLUE" radius="48.0" stroke="#f5f5f5" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label fx:id="lblName" alignment="CENTER" prefHeight="20.0" prefWidth="137.0" text="Label">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnViewProfile" mnemonicParsing="false" onAction="#btnViewProfileOnAction" text="View Profile" />
+            <ListView fx:id="lstUsers" prefHeight="235.0" prefWidth="137.0" />
+         </children>
+      </VBox>
+      <HBox layoutX="26.0" layoutY="445.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txtMsg" minHeight="25.0" onAction="#txtMsgOnAction" prefHeight="30.0" prefWidth="400.0" promptText="Type here" />
+            <Button fx:id="btnSend" defaultButton="true" minHeight="25.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="30.0" prefWidth="70.0" text="Send" />
+         </children>
+      </HBox>
+      <TextArea fx:id="txtMessageArea" layoutX="26.0" layoutY="29.0" prefHeight="408.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>

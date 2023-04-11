@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="715.0" prefWidth="787.0" stylesheets="@../css/LoginViewStyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.client.controller.UserProfileViewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="42.0" layoutY="162.0" prefWidth="300.0" spacing="18.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="78.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Name:" />
+                  <TextField fx:id="txtName" onAction="#txtNameOnAction" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="UserName/Email" />
+                  <TextField fx:id="txtUserName" editable="false" onAction="#txtUserNameOnAction" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Gender" />
+                  <RadioButton fx:id="rdoMale" mnemonicParsing="false" onAction="#rdoMaleOnAction" text="Male" />
+                  <RadioButton fx:id="rdoFemale" mnemonicParsing="false" onAction="#rdoFemaleOnAction" text="Female" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Country" />
+                  <ComboBox fx:id="cmbCountryList" editable="true" onAction="#cmbCountryListOnAction" prefHeight="24.0" prefWidth="180.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="BirthDay" />
+                  <DatePicker fx:id="dtBirthDay" editable="false" onAction="#dtBirthDayOnAction" prefHeight="24.0" prefWidth="180.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="btnEditPsw" mnemonicParsing="false" onAction="#btnEditPswOnAction" prefWidth="150.0" text="Edit Password" />
+                  <Button fx:id="btnCansel" mnemonicParsing="false" onAction="#btnCanselOnAction" prefWidth="150.0" text="Cansel" />
+               </children>
+            </HBox>
+            <HBox fx:id="hOldPassword" alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lblOldPassword" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Old Password:" />
+                  <PasswordField fx:id="txtPsw" onAction="#txtPswOnAction" prefHeight="24.0" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="53.0" spacing="10.0" VBox.vgrow="ALWAYS" />
+            <HBox fx:id="hPsw1" alignment="CENTER_LEFT" layoutX="10.0" layoutY="257.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="New Password" />
+                  <PasswordField fx:id="txtNewPsw" prefHeight="24.0" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+               </children>
+            </HBox>
+            <HBox fx:id="hPsw2" alignment="CENTER_LEFT" layoutX="10.0" layoutY="393.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Confirm New password" />
+                  <PasswordField fx:id="txtNewPswRe" prefHeight="24.0" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnSave" layoutX="276.0" layoutY="579.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="100.0" text="SAVE" />
+      <Label layoutX="264.0" layoutY="623.0" text="Copyright © 2023" />
+      <Button fx:id="btnEditProfile" layoutX="23.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnEditProfileOnAction" prefHeight="25.0" prefWidth="100.0" text="Edit Profile" />
+      <HBox layoutX="77.0" layoutY="95.0" spacing="20.0">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="263.0" layoutY="29.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/chat.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="158.0" style="-fx-text-fill: navy; -fx-font-weight: bold;" text="PoolChat">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="355.0" layoutY="115.0" style="-fx-font-weight: bold;" text="User Profile" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

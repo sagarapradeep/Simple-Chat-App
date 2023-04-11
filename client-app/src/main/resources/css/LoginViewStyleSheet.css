@@ -1,0 +1,68 @@
+#root{
+    -fx-font-family: Ubuntu;
+    -fx-background-color: #eeeefa;
+}
+
+#btnLogin{
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+}
+
+#btnSignUp{
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+}
+
+#btnSignUp:hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnLogin:hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnEditProfile {
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+;
+}
+
+#btnEditProfile :hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnSave {
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+;
+}
+
+#btnSave :hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnEditPsw {
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+;
+}
+
+#btnEditPsw :hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnCansel{
+    -fx-background-color: #f58181;
+    -fx-text-fill: white
+;
+}
+
+#btnCansel :hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}

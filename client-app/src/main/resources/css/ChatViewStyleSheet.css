@@ -1,0 +1,49 @@
+
+#root {
+    -fx-font-family: Ubuntu;
+    -fx-background-color: #eeeefa;
+
+}
+#btnSend{
+    -fx-background-color: #2222e7;
+    -fx-text-fill: white;
+}
+
+#btnViewProfile{
+    -fx-background-color: navy;
+    -fx-text-fill: white;
+}
+
+#btnSend:hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+
+#btnViewProfile:hover{
+    -fx-opacity: 0.5;
+    -fx-cursor: hand;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+.text-area {
+    -fx-font-family: Consolas;
+    -fx-font-size: 13;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+}
+
+.text-area .content {
+    -fx-background-color: #2d2d44;
+}
