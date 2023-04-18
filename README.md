@@ -20,6 +20,7 @@ This project consist with main three parts client-app( for user), Server app(Cha
 
 ### Technologies and Tools
 * Java /JavaSE 11
+* CSS
 * mysql 8.0.32
 * JavaFX / SceneBuilder
 * Intellij idea 2022.3.3
